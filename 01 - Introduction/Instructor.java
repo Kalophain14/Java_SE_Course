@@ -6,8 +6,16 @@
 // static = helps you call it without creating the objects
 // (String[] args) = common line arguements they are optional whether you pass arguements or not
 
-public class Instructor{
+/*public class Instructor{
     public static void main(String[] args){
         System.out.println("Hello World");
+    }
+}*/
+
+public class Instructor{
+    public static void main(String[] args){
+
+        System.out.println("Hello World");
+        System.out.println(args[0]);
     }
 }
