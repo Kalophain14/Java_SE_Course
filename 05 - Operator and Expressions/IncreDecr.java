@@ -29,7 +29,8 @@ public class IncreDecr
 {
     public static void main(String[] args)
     {
-        char a = 'A';
-        System.out.println(a);
+        int x = 26, y = 4, z;
+        z = 2*x++ + 3 * ++y; //x = 2*26 + 3*5 (4 becomes 5 after ++4)
+        System.out.println(z);
     }
 }
