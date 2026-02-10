@@ -13,13 +13,15 @@ int x = 10, y = 6, 3;
 
 // Binary form example
 x = 0 0 0 0 1 0 1 0
-y = 0 0 0 0 1 1 1 0
+y = 0 0 0 0 0 1 1 0
 
 result = x & y (AND OPERATORS)
-r = 0 0 0 0 0 0 1 0
+r = 0 0 0 0 0 0 1 0 (bit 10)
 
 result2 = x | y (OR OPERATORS)
-r2 =
+r2 = 0 0 0 0 1 1 1 0 (bit 14)
 
+result3 = x ^ y (XOR Operators)
+r3 = 0 0 0 0 1 1 0 0 (bit 12)
 
  */
