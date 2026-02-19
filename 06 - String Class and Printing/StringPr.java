@@ -40,9 +40,30 @@ public class StringPr {
         //System.out.println(str2);
 
         //*startsWith*
-        String str1 = "www.udemy.co.in";
-        System.out.println(str1.lastIndexOf("."));
+        //String str1 = "www.udemy.co.in";
+        //System.out.println(str1.lastIndexOf("."));
 
+        //*equals()
+        String str1 = "Java";
+        String str2 = "Java";
+        String str3 = new String("Java");
+
+        System.out.println(str1 == str2); // true as they hold the same reference of object
+        System.out.println(str1.equals(str2));
+
+        System.out.println(str1 == str3); //false because hold different address as the string is created in heap
+        System.out.println(str1.equals(str3));
+
+        //*compareTo
+        String str4 = "Java";
+        String str5 = new String("Jav");
+        System.out.println(str4.compareTo(str5));
+        System.out.println(str4.compareTo(str5));
+
+        //ignoreCase + Concatenate
+        String str6 = "Java is strict";
+        String str7 = " Java is awesome";
+        System.out.println(str6.concat(str7));
 
     }
 }
