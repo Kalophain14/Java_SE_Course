@@ -20,3 +20,23 @@ XZ > exactly XZ
     }
 }
 
+/*
+
+*Meta characters*
+\d > Digits
+\D > Not digits
+\s > Space
+\S > Not space
+\w > Alphabets or digit
+\W > Neither alphabet or digit
+
+ */
+
+public class RegularExpressions{
+    public static void main(String[] args) {
+        String str2 = " ";
+        System.out.println(str2.matches("\\s"));
+    }
+}
+
+
