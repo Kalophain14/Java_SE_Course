@@ -3,7 +3,7 @@
     {
         String n = "1";
 
-        //If statement
+        /*If statement
         /* if(n){
             System.out.println("One");
         }
