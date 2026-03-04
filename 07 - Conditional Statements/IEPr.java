@@ -35,10 +35,10 @@ public class IEPr {
         System.out.println("Enter your age");
         age = input2.nextInt();
 
-        if (age >= 14 && age <= 55){
-            System.out.println("Not young");
-        } else if (age < 30){
+        if (age >= 10 && age <= 55 ){
             System.out.println("Young");
+        } else {
+            System.out.println("Too Old");
         }
 
         //grades for given marks
@@ -48,10 +48,10 @@ public class IEPr {
         System.out.println("Enter your marks");
         marks = input3.nextInt();
 
-        if (marks >= 50){
+        if (marks >= 90){
             System.out.println("Excellent");
-        } else if (marks >= 50){
-            System.out.println("Good");
+        } else if (marks >= 50 && marks <= 79){
+            System.out.println("Average");
         } else  {
             System.out.println("Failed");
         }
