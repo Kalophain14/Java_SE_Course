@@ -160,5 +160,13 @@ class javaKick {
         }
         System.out.println("Thanks for playing!");
 
+        //Exercise 2.0 even numbers
+        int i = 2;                            // Move 2 to i
+
+        while (i <= 10) {                     // Repeat while i <= 10
+            System.out.print(i + " ");        // Display i
+            i+=2;                        // i = i + 2
+        }
+        System.out.println();
     }
 }
