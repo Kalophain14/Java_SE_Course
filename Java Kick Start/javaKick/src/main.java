@@ -168,5 +168,18 @@ class javaKick {
             i+=2;                        // i = i + 2
         }
         System.out.println();
+
+        int a = 0;
+        while (a <= 15) {                     // stop after 15
+            System.out.print(a + " ");
+            a +=3;                        // step by 3
+        }
+        System.out.println();
+
+        for (int b = 1; b <= 10; b++) {
+            int myNumber = rand.nextInt(11);    // 0 to 10
+            System.out.print(myNumber + " ");
+        }
+        System.out.println();
     }
 }
