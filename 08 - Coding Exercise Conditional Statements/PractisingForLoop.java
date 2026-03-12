@@ -113,7 +113,7 @@ public class PractisingForLoop {
             System.out.println(armstrong + " is NOT an Armstrong number ❌");
         }
 
-        // Reverse the number
+        // Reverse the number + Input
         System.out.println("Enter the reversal number");
         int reversal = sc.nextInt();
 
