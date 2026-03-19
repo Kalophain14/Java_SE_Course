@@ -152,7 +152,6 @@ public class PractisingForLoop {
         } else {
             System.out.println("❌ \"" + word + "\" is NOT a Palindrome.");
         }
-
         scanner.close(); // always close the scanner to free up memory and resources
     }
 }
