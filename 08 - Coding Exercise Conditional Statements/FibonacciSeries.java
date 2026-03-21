@@ -49,12 +49,11 @@ public class FibonacciSeries {
         int term = a;
 
         for (int i = 0; i<n; i++){
-            System.out.print(term + ",");
+            System.out.print(term + " ,");
             term = term + d; //get the next term and print next term until i == n
         }
 
         //Display GP Series
-
         Scanner gp = new Scanner(System.in);
 
         System.out.println("Program to print GP Series");
@@ -66,8 +65,33 @@ public class FibonacciSeries {
         int term2 = o;
 
         for (int g = 0; g < o; g++){
-            System.out.print(term2 + ",");
+            System.out.print(term2 + " ,");
             term2 = term2*e;
+        }
+
+        // Fibonacci Series
+        Scanner fb = new Scanner(System.in);
+        System.out.println("Program to print Fibonacci Series");
+        System.out.println("Enter your fib numbers");
+        int fib = fb.nextInt();
+
+        int aFib = 0;
+        int bFib = 1;
+        //int count = 0;
+
+        /*while (count < fib) {
+            System.out.print(aFib + " ,");
+            int next = aFib + bFib;
+            aFib = bFib;
+            bFib = next;
+            count++;
+        }*/
+
+        for (int count = 0; count < fib-2; count++){
+            int next = aFib + bFib;
+            System.out.println(aFib + ", ");
+            aFib = bFib;
+            bFib = next;
         }
     }
 }
