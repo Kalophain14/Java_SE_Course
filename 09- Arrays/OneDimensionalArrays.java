@@ -8,6 +8,8 @@ What is an array = a collection of similar data elements int, double, etc
 
  */
 
+import java.util.Scanner;
+
 public class OneDimensionalArrays {
 
     public static void main(String[] args) {
