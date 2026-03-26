@@ -33,6 +33,8 @@ public class OneDimensionalArrays {
 
 
         // Exercises
+
+        //Length of an Array
         for(int i = 0; i < num.length; i++) {
             System.out.println(num[i]++);
         }
