@@ -40,7 +40,7 @@ public class OneDimensionalArrays {
         }
 
         //using for each loop easiest way to access the array
-        // only in forward directions
+        // using a for each loop only in forward directions
         for(int i: num){
             System.out.println(i);
         }
