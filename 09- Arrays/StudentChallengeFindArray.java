@@ -6,7 +6,6 @@ public class StudentChallengeFindArray {
         //Student Challenges
 
         //01 - Finding SUM of all elements
-
         int num[] = {3, 9, 7, 8, 12, 6, 15, 5, 4, 10};
 
         int sum = 0;
@@ -16,21 +15,32 @@ public class StudentChallengeFindArray {
         }
         System.out.println("sum of all the data is: " + sum);
 
+        //-----------------------------------------//
 
         //02 - Searching through an element
-
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); //asking user to enter their key
         System.out.println("Enter your key");
-
         int key = sc.nextInt();
-
 
         for(int a = 0; a < num.length; a++) {
             if(num[a] == key){
-                System.out.println(a);
+                System.out.println("Element index found at :" + a);
                 System.exit(0); //exiting the task after a key is found
             }
         }
         System.out.println("Not found");
+
+        //----------------------------------------//
+
+        //03 - Finding a maximum element
+
+
+
+
+        //----------------------------------------//
+
+
+
+        //04 - Finding second largest element
     }
 }
