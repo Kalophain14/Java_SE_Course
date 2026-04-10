@@ -27,10 +27,36 @@ public class StudentChallengeRotate {
 
         // 02 - Inserting an element
         //printing all elements of the original array
-        for (int x: num)
+
+        int insert[] = new int[10];
+        insert[0] = 2;
+        insert[1] = 4;
+        insert[2] = 6;
+        insert[3] = 8;
+        insert[4] = 10;
+        insert[5] = 12;
+        insert[6] = 14;
+        insert[7] = 16;
+        insert[8] = 18;
+        insert[9] = 20;
+
+        //before
+        for (int x: insert)
             System.out.print(x+ ",");
         System.out.println("");
 
+        int element = 99; //to be inserted
+        int insertIndex = 5; //where the element will go
+
+        for(int i = insert.length - 1; i > insertIndex; i--){
+            insert[i] = insert[i - 1];
+        }
+        insert[insertIndex] = element; //index freedUp
+
+        //after inserting
+        for (int x: insert)
+            System.out.print(x+ ",");
+        System.out.println(" ");
 
         //-------------------------------
         // 03 - Deleting an element
