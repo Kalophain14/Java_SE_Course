@@ -21,13 +21,13 @@ public class Variables {
         int year = 2025;
         int quantity = 1;
 
-        double price = 19.99;
+        double price = 160.099;
         double gpa = 3.5;
         double temperature = -12.5;
 
         char grade = 'A';
         char symbol = '!';
-        char currency = '$';
+        char currency = 'R';
 
         boolean isStudent = true;
         boolean forSale = false;
