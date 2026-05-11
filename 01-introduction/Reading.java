@@ -33,14 +33,20 @@ public class Reading{
         //int sum = x + y;
         //System.out.println("The binary is" + " " + x);
 
-        System.out.println("Enter your name: ");
+        System.out.print("Enter your name: ");
         String name = sc.nextLine();
 
-        System.out.println("Enter your age");
+        System.out.print("Enter your age: ");
         int age = sc.nextInt();
+        sc.nextLine(); // consume leftover newline
+
+        System.out.print("What is your GPA: ");
+        double gpa = Double.parseDouble(sc.nextLine()); // reads as String, parses safely
+
 
         System.out.println("Hello " + name);
         System.out.println("You are " + age + " years old");
+        System.out.println("You're GPA score is " + gpa);
 
         sc.close();
     }
