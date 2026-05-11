@@ -56,11 +56,28 @@ public class DayDayCh {
         System.out.println("==============================================");
         
         Scanner input = new Scanner(System.in);
+        String name;
         int age;
+        boolean isStudent;
+
+        System.out.println("Enter your name: ");
+        name = input.nextLine();
 
         System.out.println("Enter your age: ");
         age = input.nextInt();
 
+        System.out.println("Are you a student true/false?: ");
+        isStudent = input.nextBoolean();
+        
+        //Program 1: Name
+
+        if (name.isEmpty()){
+            System.out.println("You didnt enter your name");
+        } else{
+            System.out.println("Hello " + name);
+        }
+
+        //Program 2: Age Validation
         if(age >= 65){
             System.out.println("You are a senior.");
         }
@@ -72,6 +89,13 @@ public class DayDayCh {
             System.out.println("You are a baby.");
         } else {
             System.out.println("You are a child");
+        }
+        
+        //Program 3: Student
+        if (isStudent) {
+            System.out.println("You are a student");
+        } else {
+            System.out.println("You are a fraud 🤣");
         }
 
         input.close();
