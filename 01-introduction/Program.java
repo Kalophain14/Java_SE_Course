@@ -3,13 +3,28 @@ import java.util.Scanner;
 public class Program{
     public static void main(String[] args){
 
-        String name;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("May I know your name? :");
+        Scanner input = new Scanner(System.in);
 
-        name = sc.nextLine();
-        System.out.println("Welcome " + name);
+        String item;
+        double price;
+        int quantity;
+        char currency = 'R';
+        double total;
 
-        return;
+        System.out.print("What item would you like to buy? :");
+        item = input.nextLine();
+
+        System.out.print("What is the price for each?: ");
+        price = input.nextDouble();
+
+        System.out.print("How many woud you like?: ");
+        quantity = input.nextInt();
+
+       total = price * quantity;
+        System.out.println("\nYou have bought " + quantity + ""+ item);
+        System.out.println("Your total is " + currency + total);
+
+
+        input.close();
     }
 }
