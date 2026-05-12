@@ -29,5 +29,37 @@ compareTo(Strings s) > compare strings in dictionary order abcdefegc (it checks 
 1 > if the first string is larger
 also uses ASCII codes to compare
 
-
  */
+
+public class StringMeth {
+    public static void main(String[] args) {
+        String name = " Kalophain";
+        /*int length = name.length();
+        char letter = name.charAt(0);
+        int index = name.indexOf("a"); //first index
+        int lastIndex = name.lastIndexOf("a"); //last index
+
+        //conversation
+        //name = name.toUpperCase();
+        //name = name.toLowerCase();
+        //name = name.trim();
+        //name = name.replace("o", "a");
+
+        //boolean
+        //.isEmpty()
+        //.contains()
+
+        System.out.println(length);
+        System.out.println(letter);
+        System.out.println(index);
+        System.out.println(lastIndex);
+        System.out.println(name.isEmpty());
+        */
+
+        if (name.equalsIgnoreCase("Kalophain")) {
+            System.out.println("You cant set the name as a password");
+        } else {
+            System.out.println("Error no character");
+        }
+    }
+}
