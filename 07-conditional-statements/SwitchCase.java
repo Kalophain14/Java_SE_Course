@@ -53,6 +53,7 @@ public class SwitchCase {
         double num2;
         char operator;
         double result = 0;
+        boolean validOperation = true;
 
         System.out.print("Enter the first number: ");
         num1 = cal.nextDouble();
@@ -67,11 +68,24 @@ public class SwitchCase {
             case '+' -> result = num1 + num2;
             case '-' -> result = num1 - num2;
             case '*' -> result = num1 * num2;
-            case '/' -> result = num1 / num2;
+            case '/' -> {
+                if (num2 == 0) {
+                    System.out.println(" \"Invalid number\" ");
+                    validOperation = false;
+                }else {
+                    result = num1 / num2;
+                }
+            }
             case '^' -> result = Math.pow(num1, num2);
-            default -> System.out.println("Wrong input");
+            default -> {
+                System.out.println("Invalid Operator");
+                validOperation = false;
+            }
+
         }
-        System.out.println(result);
+        if(validOperation){
+            System.out.println(result);
+        }
 
         cal.close();
     }
