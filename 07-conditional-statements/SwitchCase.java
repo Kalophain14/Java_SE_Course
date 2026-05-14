@@ -24,5 +24,29 @@ break;
 - They like buttons easier to use and not heavy
  */
 
+import java.util.Scanner;
+
+public class SwitchCase {
+    public static void main(String[] args) {
+        /*
+        Enhance switch = A replacement to many else if statement
+        -> do this
+         */
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the day you prefer: ");
+        String day = scan.nextLine();
+
+        switch (day) {
+            case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ->
+                    System.out.println("It is a weekday");
+            case "Saturday", "Sunday" ->
+                    System.out.println("It is the weekend");
+            default -> System.out.println(day + " it isn't a day");
+        }
+    }
+}
+
+
 
 
