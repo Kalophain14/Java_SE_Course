@@ -19,8 +19,17 @@ public class GuessGame {
             guess = input.nextInt();
             attempts++;
 
+            if (guess < randonNumber) {
+                System.out.println("Too Lower, try again!");
+            } else if (guess > randonNumber) {
+                System.out.println("Too high, try again!");
+            } else {
+                System.out.println("You guessed the correct number!" + randonNumber);
+                System.out.println("# of attempts made: " + attempts);
+            }
+
         }while(guess != randonNumber);
 
-        System.out.println("Congrats, you have won");
+        input.close();
     }
 }
