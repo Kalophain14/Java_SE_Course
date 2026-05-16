@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * ============================================================
  *  TOPIC: for Loop
@@ -43,10 +45,19 @@
  * ============================================================
  */
 public class ForLoop {
+    public static void main(String[] args) throws InterruptedException {
+        Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        for (int i = 10; i > 0; i-=1){
+        System.out.print("How many numbers to countdown: ");
+        int start = scanner.nextInt();
+
+        for(int i = start; i > 0; i-=1){
             System.out.println(i);
+            Thread.sleep(1000);
         }
+
+        System.out.println("Happy New Year");
+
+        scanner.close();
     }
 }
