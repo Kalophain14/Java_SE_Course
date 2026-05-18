@@ -64,7 +64,7 @@ public class NestedLoops {
         System.out.print("Enter the num of rows: ");
         rows = scanner.nextInt();
 
-        System.out.print("Enter the number of columns: ");
+        System.out.print("Enter the num of columns: ");
         cols = scanner.nextInt();
 
         System.out.print("Enter the symbol: ");
