@@ -61,7 +61,7 @@ public class NestedLoops {
         int cols;
         char symbol;
 
-        System.out.print("Enter the number of rows: ");
+        System.out.print("Enter the num of rows: ");
         rows = scanner.nextInt();
 
         System.out.print("Enter the number of columns: ");
@@ -76,7 +76,6 @@ public class NestedLoops {
             }
             System.out.println();
         }
-
         scanner.close();
     }
 }
